@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro'
+import SectionContainer from '@/components/SectionContainer.astro'
+import Card from '../components/Card.astro'
+---
+
+<Layout title="Salsa | Speakeasy Bar">
+  <main class="dark:text-gray-200">
+    <article class="w-full flex">
+      <SectionContainer class="flex justify-center items-center">
+        <img class="" src="/images/logo.webp" alt="" />
+        <img class="max-md:hidden" src="/images/image-header.webp" alt="" />
+      </SectionContainer>
+    </article>
+    <article>
+      <SectionContainer class="py-16 md:py-36"> Hola </SectionContainer>
+    </article>
+  </main>
+</Layout>
+
+<style>
+  main {
+    min-height: 100vh;
+  }
+</style>
