@@ -23,11 +23,13 @@ const { title } = Astro.props
     <Header />
     <slot />
     <Footer />
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../../node_modules/flowbite/dist/datepicker.js"></script>
   </body>
 </html>
 <style is:global>
   html {
-    font-family: 'Onest Variable', system-ui, sans-serif;
+    font-family: 'locust-resistence', system-ui, sans-serif;
     scroll-behavior: smooth;
   }
   body {
@@ -35,5 +37,25 @@ const { title } = Astro.props
     display: flex;
     flex-direction: column;
     overscroll-behavior: none;
+  }
+  @font-face {
+    font-family: 'locust-resistence';
+    src: url('/fonts/cgf-locust-resistance.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Goldman';
+    src: url('/fonts/Goldman-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Goldman-bold';
+    src: url('/fonts/Goldman-Bold.ttf') format('truetype');
+    font-style: bold;
+    font-display: swap;
+    font-weight: 700;
   }
 </style>

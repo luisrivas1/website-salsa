@@ -1,25 +1,429 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import SectionContainer from '@/components/SectionContainer.astro'
-import Card from '../components/Card.astro'
+import Carousel from '../components/Carousel.astro'
+import Hero from '@/components/Hero.astro'
 ---
 
 <Layout title="Salsa | Speakeasy Bar">
-  <main class="dark:text-gray-200">
-    <article class="w-full flex">
-      <SectionContainer class="flex justify-center items-center">
-        <img class="" src="/images/logo.webp" alt="" />
-        <img class="max-md:hidden" src="/images/image-header.webp" alt="" />
+  <SectionContainer class="flex justify-center items-center">
+    <Hero />
+  </SectionContainer>
+  <main
+    class="dark:text-gray-200 bg-auto bg-center z-[-2]"
+    style="background-image: url(/images/background-salsa.webp);"
+  >
+    <article class="bg-primary">
+      <SectionContainer class="py-6 md:py-12">
+        <div class="flex flex-col justify-center gap-8 items-center">
+          <h1 class="md:w-[800px] h-auto text-4xl text-center">
+            AHORA EN YUMBO SALSA SPEAKYEASY BAR
+          </h1>
+          <p class="font-[Goldman] text-center text-2xl lg:w-[820px]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Repellendus repudiandae, eveniet consectetur nostrum iusto
+            consequuntur odit ipsam facilis est praesentium, dignissimos
+            impedit, magni aliquam sequi at veniam nesciunt voluptatem minima?
+          </p>
+          <button
+            type="button"
+            class="font-[Goldman-bold] text-white bg-success hover:bg-success-hover focus:outline-none focus:ring-4 focus:ring-success-ring font-medium rounded-full text-sm lg:text-xl px-5 py-2.5 text-center"
+            >MEMBRESÍA</button
+          >
+        </div>
       </SectionContainer>
     </article>
+
     <article>
-      <SectionContainer class="py-16 md:py-36"> Hola </SectionContainer>
+      <SectionContainer
+        class="max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-7xl mx-auto"
+      >
+        <div class="py-4">
+          <Carousel />
+        </div>
+
+        <section class="flex flex-row gap-1.5 lg:gap-2 pb-4">
+          <picture>
+            <img src="/images/about/1.webp" alt="" />
+          </picture>
+          <picture>
+            <img src="/images/about/2.webp" alt="" />
+          </picture>
+          <picture>
+            <img src="/images/about/3.webp" alt="" />
+          </picture>
+          <picture>
+            <img src="/images/about/4.webp" alt="" />
+          </picture>
+          <picture>
+            <img src="/images/about/5.webp" alt="" />
+          </picture>
+        </section>
+
+        <section
+          class="text-xl flex flex-col md:text-2xl md:flex-row gap-4 py-4"
+        >
+          <p class="font-[Goldman] text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
+            libero accusantium ipsum, esse sed nemo architecto ad cum
+            reiciendis.
+          </p>
+          <p class="font-[Goldman] text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
+            libero accusantium ipsum, esse sed nemo architecto ad cum
+            reiciendis.
+          </p>
+        </section>
+      </SectionContainer>
     </article>
+
+    <article>
+      <SectionContainer class="flex flex-col justify-center gap-8 pt-10">
+        <h2 class="w-[400px] md:w-[600px] font-[Goldman-bold] text-4xl">
+          Salsas Ùnicas y Bebidas Que evocan buenos momentos
+        </h2>
+        <section
+          class="flex flex-col md:flex-row max-w-sm mx-auto gap-4 md:max-w-4xl lg:max-w-8xl lg:gap-6 xl:max-w-7xl pb-4"
+        >
+          <div class="flex flex-col justify-center gap-4 items-center">
+            <picture>
+              <img class="rounded-lg" src="/images/about/1.webp" alt="" />
+            </picture>
+            <button
+              type="button"
+              class="font-[Goldman-bold] text-white bg-success hover:bg-success-hover focus:outline-none focus:ring-4 focus:ring-success-ring font-medium rounded-full text-sm lg:text-xl px-5 py-2.5 text-center"
+              >COMIDAS</button
+            >
+          </div>
+          <div class="flex flex-col justify-center gap-4 items-center">
+            <picture>
+              <img class="rounded-lg" src="/images/about/1.webp" alt="" />
+            </picture>
+            <button
+              type="button"
+              class="font-[Goldman-bold] text-white bg-success hover:bg-success-hover focus:outline-none focus:ring-4 focus:ring-success-ring font-medium rounded-full text-sm lg:text-xl px-5 py-2.5 text-center"
+              >BEBIDAS</button
+            >
+          </div>
+        </section>
+      </SectionContainer>
+    </article>
+
+    <article class="py-12">
+      <SectionContainer class="flex flex-col justify-center items-center gap-8">
+        <h2 class="md:w-[900px] text-4xl px-8 text-center">
+          ESPACIOS MULTIFUNCIONALES PARA TODO TIPO DE EVENTOS
+        </h2>
+        <section
+          class="flex flex-col gap-2 md:grid md:grid-cols-2 md:gap-4 lg:grid-cols-4 lg:gap-4 pb-4 py-6 px-3 md:px-12"
+        >
+          <div
+            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-primary dark:border-primary-border"
+          >
+            <a href="#">
+              <img class="rounded-t-lg" src="/images/about/1.webp" alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 font-[Goldman-bold] text-2xl tracking-tight text-gray-900 dark:text-white"
+                >
+                  Noteworthy technology acquisitions 2021
+                </h5>
+              </a>
+              <p class="mb-3 font-[Goldman] text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-primary dark:border-primary-border"
+          >
+            <a href="#">
+              <img class="rounded-t-lg" src="/images/about/1.webp" alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 font-[Goldman-bold] text-2xl tracking-tight text-gray-900 dark:text-white"
+                >
+                  Noteworthy technology acquisitions 2021
+                </h5>
+              </a>
+              <p class="mb-3 font-[Goldman] text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-primary dark:border-primary-border"
+          >
+            <a href="#">
+              <img class="rounded-t-lg" src="/images/about/1.webp" alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-[Goldman-bold] tracking-tight text-gray-900 dark:text-white"
+                >
+                  Noteworthy technology acquisitions 2021
+                </h5>
+              </a>
+              <p class="mb-3 font-[Goldman] text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-primary dark:border-primary-border"
+          >
+            <a href="#">
+              <img class="rounded-t-lg" src="/images/about/1.webp" alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-[Goldman-bold] tracking-tight text-gray-900 dark:text-white"
+                >
+                  Noteworthy technology acquisitions 2021
+                </h5>
+              </a>
+              <p class="mb-3 font-[Goldman] text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <p class="font-[Goldman] text-center text-2xl">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
+          libero accusantium ipsum, esse sed nemo architecto ad cum reiciendis.
+          Qui ipsa eveniet corporis, soluta reprehenderit quas commodi nulla
+          omnis harum.
+        </p>
+      </SectionContainer>
+    </article>
+
+    <article class="bg-primary">
+      <SectionContainer class="py-6 md:py-12">
+        <section class="flex flex-col justify-center gap-8 items-center">
+          <h2 class="text-2xl md:text-4xl text-center">
+            RESERVA MOMENTOS INOLVIDABLES
+          </h2>
+
+          <form class="" action="#">
+            <div id="grid-form" class="grid grid-cols-1 gap-4">
+              <div id="grid-date">
+                <label for="date">FECHA</label>
+                <div class="relative">
+                  <div
+                    class="absolute inset-y-0 end-0 top-0 flex items-center pe-3.5 pointer-events-none"
+                  >
+                    <svg
+                      class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <input
+                    datepicker-autohide
+                    id="date"
+                    type="text"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Select date"
+                  />
+                </div>
+              </div>
+
+              <div id="grid-persons">
+                <label
+                  class="mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  for="people">Personas</label
+                >
+                <select
+                  class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  id="people"
+                >
+                  <option disabled selected>Seleccionar</option>
+                  <option>1</option>
+                  <option>3</option>
+                  <option>5</option>
+                </select>
+              </div>
+
+              <div id="grid-hour">
+                <label
+                  for="time"
+                  class="mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >HORA</label
+                >
+                <div class="relative">
+                  <div
+                    class="absolute inset-y-0 end-0 top-0 flex items-center pe-3.5 pointer-events-none"
+                  >
+                    <svg
+                      class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4a1 1 0 1 0-2 0v4a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V8Z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
+                  <input
+                    type="time"
+                    id="time"
+                    class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    min="09:00"
+                    max="18:00"
+                    value="00:00"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div id="grid-button">
+                <button
+                  type="submit"
+                  class="text-white text-xl w-full font-[Goldman] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-success dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                  >Reservar</button
+                >
+                <button
+                  type="reset"
+                  class="text-white text-xl w-full font-[Goldman] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-success dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                  >Resest</button
+                >
+              </div>
+            </div>
+          </form>
+        </section>
+      </SectionContainer>
+    </article>
+
+    <style>
+      main {
+        min-height: 100vh;
+      }
+
+      @media screen and (min-width: 768px) {
+        #grid-form {
+          display: grid;
+          grid-template-areas:
+            'date persons hour'
+            'button button button';
+          grid-template-columns: 350px 1fr;
+          grid-template-rows: 1fr auto;
+        }
+        #grid-date {
+          grid-area: date;
+        }
+        #grid-persons {
+          grid-area: persons;
+        }
+        #grid-hour {
+          grid-area: hour;
+        }
+        #grid-button {
+          grid-area: button;
+        }
+      }
+    </style>
   </main>
 </Layout>
-
-<style>
-  main {
-    min-height: 100vh;
-  }
-</style>
