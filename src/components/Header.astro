@@ -24,14 +24,12 @@ const navItems = [
 ---
 
 <header class="fixed top-0 z-40 w-full mx-auto">
-  <nav
-    class="font-[Goldman] border-gray-200 flex items-center justify-center bg-zinc-900/45 text-gray-200"
-  >
+  <nav class="font-[Goldman] border-gray-200 bg-zinc-900/45 text-gray-200">
     <!-- max-w-screen-xl -->
     <div
-      class="w-full flex flex-col md:flex-row items-center justify-between gap-2 p-2"
+      class="w-full flex flex-col md:flex-row items-center justify-between m-auto gap-2 p-4"
     >
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <a href="#" class="items-center space-x-3 rtl:space-x-reverse">
         <img
           src="/images/logo-header.svg"
           class="h-10 lg:h-16 xl:h-28"
@@ -39,11 +37,13 @@ const navItems = [
         />
       </a>
 
-      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <div
+        class="flex md:order-2 md:hidden space-x-3 md:space-x-0 rtl:space-x-reverse"
+      >
         <button
           data-collapse-toggle="navbar-cta"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-cta"
           aria-expanded="false"
         >
