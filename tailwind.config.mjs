@@ -10,6 +10,8 @@ export default {
         primary: '#802e2f',
         'primary-border': '#98504d',
         secundary: '#0099db',
+        'secundary-ring': '#0076A9',
+        'secundary-hover': '#0086bf',
         success: '#2e807f',
         'success-hover': '#296a69',
         'success-ring': '#9abebd',

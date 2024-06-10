@@ -9,13 +9,13 @@ import Hero from '@/components/Hero.astro'
   <SectionContainer class="flex justify-center items-center">
     <Hero />
   </SectionContainer>
-  <main
-    class="dark:text-gray-200 bg-auto bg-center z-[-2]"
-    style="background-image: url(/images/background-salsa.webp);"
-  >
+  <main>
+    <!-- Membresía -->
     <article class="bg-primary">
       <SectionContainer class="py-6 md:py-12">
-        <div class="flex flex-col justify-center gap-8 items-center">
+        <div
+          class="flex flex-col justify-center gap-8 items-center dark:text-white"
+        >
           <h1 class="md:w-[800px] h-auto text-4xl text-center">
             AHORA EN YUMBO SALSA SPEAKYEASY BAR
           </h1>
@@ -27,14 +27,15 @@ import Hero from '@/components/Hero.astro'
           </p>
           <button
             type="button"
-            class="font-[Goldman-bold] text-white bg-success hover:bg-success-hover focus:outline-none focus:ring-4 focus:ring-success-ring font-medium rounded-full text-sm lg:text-xl px-5 py-2.5 text-center"
+            class="font-[Goldman-bold] lg:w-48 h-auto text-white bg-success hover:bg-success-hover focus:outline-none focus:ring-4 focus:ring-success-ring font-medium rounded-full text-sm lg:text-xl px-5 py-2.5 text-center"
             >MEMBRESÍA</button
           >
         </div>
       </SectionContainer>
     </article>
 
-    <article>
+    <!-- About -->
+    <article class="dark:text-white">
       <SectionContainer
         class="max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-7xl mx-auto"
       >
@@ -77,10 +78,13 @@ import Hero from '@/components/Hero.astro'
       </SectionContainer>
     </article>
 
-    <article>
+    <!-- Menú -->
+    <article class="dark:text-white">
       <SectionContainer class="flex flex-col justify-center gap-8 pt-10">
-        <h2 class="w-[400px] md:w-[600px] font-[Goldman-bold] text-4xl">
-          Salsas Ùnicas y Bebidas Que evocan buenos momentos
+        <h2
+          class="w-[400px] md:w-[600px] font-[Goldman-bold] text-4xl ml-10 lg:ml-20"
+        >
+          Salsas únicas y bebidas que evocan buenos momentos
         </h2>
         <section
           class="flex flex-col md:flex-row max-w-sm mx-auto gap-4 md:max-w-4xl lg:max-w-8xl lg:gap-6 xl:max-w-7xl pb-4"
@@ -91,7 +95,7 @@ import Hero from '@/components/Hero.astro'
             </picture>
             <button
               type="button"
-              class="font-[Goldman-bold] text-white bg-success hover:bg-success-hover focus:outline-none focus:ring-4 focus:ring-success-ring font-medium rounded-full text-sm lg:text-xl px-5 py-2.5 text-center"
+              class="font-[Goldman-bold] lg:w-48 h-auto text-white bg-success hover:bg-success-hover focus:outline-none focus:ring-4 focus:ring-success-ring font-medium rounded-full text-sm lg:text-xl px-5 py-2.5 text-center"
               >COMIDAS</button
             >
           </div>
@@ -101,7 +105,7 @@ import Hero from '@/components/Hero.astro'
             </picture>
             <button
               type="button"
-              class="font-[Goldman-bold] text-white bg-success hover:bg-success-hover focus:outline-none focus:ring-4 focus:ring-success-ring font-medium rounded-full text-sm lg:text-xl px-5 py-2.5 text-center"
+              class="font-[Goldman-bold] lg:w-48 h-auto text-white bg-success hover:bg-success-hover focus:outline-none focus:ring-4 focus:ring-success-ring font-medium rounded-full text-sm lg:text-xl px-5 py-2.5 text-center"
               >BEBIDAS</button
             >
           </div>
@@ -109,9 +113,10 @@ import Hero from '@/components/Hero.astro'
       </SectionContainer>
     </article>
 
-    <article class="py-12">
+    <!-- Eventos -->
+    <article class="dark:text-white py-12">
       <SectionContainer class="flex flex-col justify-center items-center gap-8">
-        <h2 class="md:w-[900px] text-4xl px-8 text-center">
+        <h2 class="md:w-[900px] text-3xl md:text-4xl px-8 text-center">
           ESPACIOS MULTIFUNCIONALES PARA TODO TIPO DE EVENTOS
         </h2>
         <section
@@ -137,7 +142,7 @@ import Hero from '@/components/Hero.astro'
               </p>
               <a
                 href="#"
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-secundary dark:hover:bg-secundary-hover dark:focus:ring-secundary-ring"
               >
                 Read more
                 <svg
@@ -178,7 +183,7 @@ import Hero from '@/components/Hero.astro'
               </p>
               <a
                 href="#"
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-secundary dark:hover:bg-secundary-hover dark:focus:ring-secundary-ring"
               >
                 Read more
                 <svg
@@ -219,7 +224,7 @@ import Hero from '@/components/Hero.astro'
               </p>
               <a
                 href="#"
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-secundary dark:hover:bg-secundary-hover dark:focus:ring-secundary-ring"
               >
                 Read more
                 <svg
@@ -260,7 +265,7 @@ import Hero from '@/components/Hero.astro'
               </p>
               <a
                 href="#"
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-secundary dark:hover:bg-secundary-hover dark:focus:ring-secundary-ring"
               >
                 Read more
                 <svg
@@ -291,7 +296,8 @@ import Hero from '@/components/Hero.astro'
       </SectionContainer>
     </article>
 
-    <article class="bg-primary">
+    <!-- Reservaciones -->
+    <article class="bg-primary dark:text-white">
       <SectionContainer class="py-6 md:py-12">
         <section class="flex flex-col justify-center gap-8 items-center">
           <h2 class="text-2xl md:text-4xl text-center">
@@ -301,7 +307,10 @@ import Hero from '@/components/Hero.astro'
           <form class="" action="#">
             <div id="grid-form" class="grid grid-cols-1 gap-4">
               <div id="grid-date">
-                <label for="date">FECHA</label>
+                <label
+                  class="mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  for="date">FECHA</label
+                >
                 <div class="relative">
                   <div
                     class="absolute inset-y-0 end-0 top-0 flex items-center pe-3.5 pointer-events-none"
@@ -319,11 +328,12 @@ import Hero from '@/components/Hero.astro'
                     </svg>
                   </div>
                   <input
+                    datepicker
                     datepicker-autohide
                     id="date"
                     type="text"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Select date"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Seleccione la fecha"
                   />
                 </div>
               </div>
@@ -331,15 +341,16 @@ import Hero from '@/components/Hero.astro'
               <div id="grid-persons">
                 <label
                   class="mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                  for="people">Personas</label
+                  for="people">PERSONAS</label
                 >
                 <select
-                  class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pe-4 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   id="people"
                 >
-                  <option disabled selected>Seleccionar</option>
                   <option>1</option>
+                  <option>2</option>
                   <option>3</option>
+                  <option>4</option>
                   <option>5</option>
                 </select>
               </div>
@@ -367,6 +378,7 @@ import Hero from '@/components/Hero.astro'
                         clip-rule="evenodd"></path>
                     </svg>
                   </div>
+
                   <input
                     type="time"
                     id="time"
@@ -382,12 +394,12 @@ import Hero from '@/components/Hero.astro'
               <div id="grid-button">
                 <button
                   type="submit"
-                  class="text-white text-xl w-full font-[Goldman] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-success dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                  class="text-white text-xl w-full font-[Goldman] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-success dark:hover:bg-success-hover focus:outline-none dark:focus:ring-success-ring"
                   >Reservar</button
                 >
                 <button
                   type="reset"
-                  class="text-white text-xl w-full font-[Goldman] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-success dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                  class="text-white text-xl w-full font-[Goldman] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-success dark:hover:bg-success-hover focus:outline-none dark:focus:ring-success-ring"
                   >Resest</button
                 >
               </div>
